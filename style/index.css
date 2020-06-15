@@ -1,0 +1,254 @@
+* {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: light;
+	src: url('../fonts/AntennaCond-Light.otf');
+}
+@font-face {
+	font-family: regular;
+	src: url('../fonts/AntennaCond-Regular.otf');
+}
+@font-face {
+	font-family: medium;
+	src: url('../fonts/AntennaCond-Medium.otf');
+}
+@font-face {
+	font-family: xlight;
+	src: url('../fonts/AntennaCond-ExtraLight.otf');
+}
+.nav {
+	background: rgba(101, 101, 101, 1);
+	min-height: 4.5vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 0 auto;
+}
+.nav-elements {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 50vw;
+}
+.logo {
+	width: 10vw;
+	height: auto;
+	margin-right: 25px;
+}
+.dropbtn {
+	color: white;
+	border: none;
+	background: none;
+	letter-spacing: 1px;
+	font-family: regular;
+	font-size: 1vw;
+	padding: 0;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	margin-top: 0.2vw;
+	display: none;
+	position: absolute;
+	background-color: rgba(101, 101, 101, 0.8);
+	min-width: 160px;
+	z-index: 1;
+	letter-spacing: 1px;
+	font-family: regular;
+	font-size: 1vw;
+}
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover {
+	text-decoration: none;
+	color: white;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.icon {
+	height: 23px;
+}
+.fb {
+	height: 2vh;
+	width: auto;
+}
+.pin {
+	height: 2.2vh;
+	width: auto;
+}
+.dropdown-pin {
+	display: flex;
+	flex-direction: column;
+	margin-right: 3vh;
+	margin-left: 1.5vh;
+}
+.address {
+	display: none;
+	background-color: aqua;
+}
+.strip {
+	height: 5px;
+	background: white;
+}
+.content {
+	min-height: 90vh;
+}
+.header {
+	display: flex;
+	overflow-x: hidden;
+	justify-content: center;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.girls {
+	height: 100vh;
+	width: auto;
+	transform: scale(1.5) translate(-7vw, -8vw);
+}
+.headliner {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 13vw;
+	margin-top: 12vh;
+}
+.line1 {
+	font-family: xlight;
+	color: white;
+	font-size: 4vw;
+	line-height: 1;
+	margin-bottom: 1.1vw;
+}
+.line2 {
+	font-family: light;
+	color: white;
+	font-size: 7vw;
+	line-height: 1;
+	margin-bottom: 1.5vw;
+}
+.blurb {
+	font-family: xlight;
+	color: #4d7979;
+	font-size: 1.5vw;
+	width: 90%;
+	text-align: center;
+	margin-bottom: 2.5vw;
+}
+.eq-row {
+	display: flex;
+	flex-direction: row;
+}
+.eq {
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 16vw;
+	height: auto;
+}
+.explore {
+	background: #4c7c7c;
+	padding: 2vw;
+}
+.explore-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 65%;
+	margin: 0 auto 0 auto;
+}
+.explore-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.explore-photo {
+	width: 10vw;
+	height: auto;
+}
+.explore-title {
+	font-family: xlight;
+	color: white;
+	margin-top: 1vw;
+	font-size: 1.8vw;
+}
+.explore-desc {
+	font-family: xlight;
+	color: white;
+	width: 70%;
+	text-align: center;
+	font-size: 1.3vw;
+}
+
+@media only screen and (max-width: 1024px) {
+	.header {
+		height: 91vh;
+	}
+	.girls {
+		height: 100vh;
+		transform: scale(1.5) translate(-6vw, -10vw);
+	}
+	.headliner {
+		margin-left: 16vw;
+		margin-top: 10vw;
+	}
+	.line1 {
+		font-size: 6vh;
+	}
+	.line2 {
+		font-size: 9vh;
+	}
+	.blurb {
+		font-size: 2.5vh;
+		width: 90%;
+	}
+	.eq {
+		width: 22vh;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.header {
+		height: 91vh;
+	}
+	.line1 {
+		font-size: 6vw;
+	}
+	.line2 {
+		font-size: 9vw;
+	}
+	.blurb {
+		font-size: 2.5vw;
+		width: 90%;
+	}
+	.eq-row {
+		display: flex;
+		flex-direction: row;
+	}
+	.eq {
+		width: 22vw;
+		height: auto;
+	}
+	.girls {
+		transform: scale(1.5) translate(-8vw, -25vw);
+	}
+	.headliner {
+		margin-left: 22vw;
+		margin-top: 30vw;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.girls {
+		transform: scale(1) translate(16vw, -6vw);
+	}
+}
