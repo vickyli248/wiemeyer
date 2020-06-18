@@ -386,6 +386,9 @@
 	display: flex;
 	flex-direction: column;
 }
+.c2 {
+	margin-left: 2.5vw;
+}
 .services h2 {
 	font-size: 1.5vw;
 	color: grey;
@@ -395,6 +398,122 @@
 .tel {
 	color: #4d7979;
 	text-decoration: underline;
+}
+.apts {
+	background: #d4e4e4;
+	padding: 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.apts h1 {
+	font-family: regular;
+	color: black;
+	font-size: 2vw;
+}
+.apts p {
+	font-family: xlight;
+	color: black;
+	font-size: 1.3vw;
+}
+.apts a {
+	color: #4d7979;
+	text-decoration: underline;
+}
+.apts a:hover {
+	color: #4d7979;
+	text-decoration: underline;
+}
+.apts button {
+	border: none;
+	font-size: 1.3vw;
+	font-family: xlight;
+	color: white;
+	background-color: #4c7c7c;
+	padding: 0.5vw;
+	width: 8vw;
+	margin-top: 2vw;
+}
+
+.footer {
+	background: #343434;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2vw;
+	padding-bottom: 4vw;
+}
+.footer-columns {
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	justify-content: center;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	margin: 2vw;
+}
+.column a {
+	color: white;
+	font-size: 1.2vw;
+	font-family: xlight;
+	margin-bottom: 0.4vw;
+}
+.column a:hover {
+	color: white;
+}
+.column a:first-child {
+	font-family: regular;
+}
+.footer-bottom {
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	width: 72%;
+	align-items: center;
+}
+.footer-bottom p {
+	color: grey;
+	font-family: light;
+}
+.footer-bottom .site {
+	color: white;
+	font-family: light;
+	margin-left: 2vw;
+}
+.bottom-left {
+	display: flex;
+	font-size: 1vw;
+}
+.bottom-left a {
+	color: white;
+	font-family: light;
+	font-size: 1vw;
+}
+.mailing-list {
+	display: flex;
+	background-color: black;
+	align-items: center;
+	padding: 1vw;
+}
+.mailing-list p {
+	font-family: light;
+	color: white;
+	font-size: 1.2vw;
+	margin: 0;
+}
+.mailing-list button {
+	border: none;
+	background-color: grey;
+	font-family: light;
+	color: white;
+	font-size: 1vw;
+	margin-left: 2vw;
+	padding: 0.5vw;
+	width: 5vw;
 }
 @media only screen and (max-width: 1024px) {
 	.headliner {
@@ -411,6 +530,22 @@
 	}
 	.girls {
 		transform: scale(1.6) translateY(-10vh) translateX(-7vw);
+	}
+	.carousel {
+		height: 25vw;
+	}
+	.sean {
+		height: 20vw;
+		width: auto;
+	}
+	.carousel-img {
+		height: 13vw;
+		margin-left: 6vw;
+	}
+	.carousel-img.pods {
+		height: 15vw;
+		margin-left: 9vw;
+		margin-right: 5vw;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -484,5 +619,147 @@
 	}
 	.smallplayer {
 		display: flex;
+	}
+
+	.sean {
+		width: 35vw;
+		height: auto;
+	}
+	.doctor {
+		padding: 2vw;
+		padding-bottom: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.doctor-name {
+		color: white;
+		font-size: 4vw;
+		font-family: regular;
+	}
+	.doctor-desc {
+		color: white;
+		font-size: 3vw;
+		font-family: xlight;
+		line-height: 1.7em;
+		margin: 0;
+	}
+	.doctor-more {
+		color: #4c7c7c !important;
+		font-size: 3vw;
+		font-family: xlight;
+		text-decoration: underline;
+	}
+	.carousel {
+		height: 70vw;
+		justify-content: center;
+	}
+	.carousel-inner {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
+	.carousel-name {
+		margin-top: 0;
+		margin-bottom: 1vw;
+		font-size: 4vw;
+	}
+	.carousel-item {
+		flex-direction: column;
+		align-items: center !important;
+		padding: 3vw;
+		height: 90%;
+	}
+	.carousel-img {
+		margin: 0;
+		height: 25vw;
+		margin-top: 5vw;
+	}
+	.carousel-img.pods {
+		margin: 0;
+		height: 25vw;
+	}
+	.carousel-desc {
+		margin: 0;
+		font-size: 3vw;
+	}
+	.carousel-more {
+		font-size: 3vw;
+	}
+	.ADA {
+		flex-direction: column;
+		padding: 8vw;
+	}
+	.ADA h3,
+	.services h1,
+	.apts h1 {
+		margin-top: 2vw;
+		font-size: 4vw;
+		margin-bottom: 1vw;
+	}
+	.ADA p,
+	.apts p {
+		font-size: 3vw;
+		margin-bottom: 0;
+	}
+	.icon-ada {
+		height: 20vw;
+	}
+	.services,
+	.apts {
+		padding: 3vw;
+	}
+	.services .thing-they-do {
+		font-size: 3vw;
+	}
+	.service-row {
+		flex-direction: column;
+	}
+	.c2 {
+		margin: 0;
+	}
+	.services h2 {
+		font-size: 3vw;
+	}
+	.apts p {
+		width: 49%;
+	}
+	.apts button {
+		font-size: 3vw;
+		width: auto;
+		padding: 1vw 2vw;
+	}
+	.footer {
+		padding: 5vw;
+	}
+	.footer-columns {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.column {
+		margin: 1vw;
+	}
+	.column a {
+		font-size: 2vw;
+	}
+	.footer-bottom {
+		flex-direction: column-reverse;
+		margin-top: 3vw;
+	}
+	.footer-bottom p,
+	.footer-bottom a {
+		font-size: 2vw;
+	}
+	.mailing-list {
+		margin-bottom: 2vw;
+		padding: 1vw 2vw;
+	}
+	.mailing-list p,
+	.mailing-list button {
+		font-size: 2vw;
+	}
+	.mailing-list button {
+		padding: 1vw 2vw;
+		width: auto;
 	}
 }
