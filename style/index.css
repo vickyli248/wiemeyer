@@ -17,6 +17,7 @@
 	font-family: xlight;
 	src: url('../fonts/AntennaCond-ExtraLight.otf');
 }
+
 .nav {
 	background: rgba(101, 101, 101, 1);
 	min-height: 4.5vw;
@@ -25,6 +26,16 @@
 	justify-content: center;
 	width: 100%;
 	margin: 0 auto 0 auto;
+}
+.small-nav {
+	display: none;
+}
+.big-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 60vw;
 }
 .nav-elements {
 	display: flex;
@@ -91,17 +102,35 @@
 	flex-direction: column;
 	margin-right: 3vh;
 	margin-left: 1.5vh;
+	align-items: flex-end;
 }
 .address {
+	padding: 1vw;
+	margin-top: 3.5vw;
+	margin-left: 5vw;
 	display: none;
-	background-color: aqua;
+	position: absolute;
+	background-color: #9cb4b4;
+	color: white;
+	min-width: 160px;
+	z-index: 1;
+	letter-spacing: 1px;
+	font-family: regular;
+	font-size: 1vw;
+}
+.address:hover {
+	color: #4d7979;
+	text-decoration: underline;
 }
 .strip {
 	height: 5px;
 	background: white;
 }
+
 .content {
 	min-height: 90vh;
+	margin-top: 0.5vw;
+	margin-bottom: 0.5vw;
 }
 .header {
 	display: flex;
@@ -157,6 +186,7 @@
 	width: 13vw;
 	height: auto;
 }
+
 .explore {
 	background: #4c7c7c;
 	padding: 2vw;
@@ -197,6 +227,7 @@
 	text-align: center;
 	font-size: 1.3vw;
 }
+
 .videos {
 	display: flex;
 	align-items: center;
@@ -223,6 +254,7 @@
 .smallplayer {
 	display: none;
 }
+
 .doctor {
 	background-color: black;
 	display: flex;
@@ -257,6 +289,7 @@
 	font-family: xlight;
 	text-decoration: underline;
 }
+
 .carousel {
 	padding: 0vw !important;
 	padding-top: 1vw !important;
@@ -317,6 +350,7 @@
 	margin-left: 9vw;
 	margin-right: 10vh;
 }
+
 .ADA {
 	overflow: hidden;
 	background-image: url('../img/bg-ada.jpg');
@@ -354,6 +388,7 @@
 	font-size: 1.3vw;
 	line-height: 1.7em;
 }
+
 .services {
 	display: flex;
 	flex-direction: column;
@@ -399,6 +434,7 @@
 	color: #4d7979;
 	text-decoration: underline;
 }
+
 .apts {
 	background: #d4e4e4;
 	padding: 2vw;
@@ -516,6 +552,34 @@
 	width: 5vw;
 }
 @media only screen and (max-width: 1024px) {
+	.small-nav {
+		display: none;
+	}
+	.nav {
+		min-height: 7vw;
+	}
+	.big-nav {
+		width: 80vw;
+	}
+	.nav-elements {
+		width: 70vw;
+	}
+	.logo {
+		width: 15vw;
+		height: auto;
+		margin-right: 25px;
+	}
+	.dropbtn {
+		font-size: 1.3vw;
+	}
+	.dropdown-content {
+		display: none;
+	}
+	.address {
+		margin-left: 0vw;
+		font-size: 2vw;
+		margin-top: 5vw;
+	}
 	.headliner {
 		margin-left: 23vw;
 		margin-top: 20vh;
@@ -549,6 +613,32 @@
 	}
 }
 @media only screen and (max-width: 768px) {
+	.small-nav {
+		display: none;
+	}
+	.nav {
+		min-height: 7vw;
+	}
+	.big-nav {
+		width: 80vw;
+	}
+	.nav-elements {
+		width: 70vw;
+	}
+	.logo {
+		width: 15vw;
+		height: auto;
+		margin-right: 25px;
+	}
+	.dropbtn {
+		font-size: 1.3vw;
+	}
+
+	.address {
+		margin-left: 0vw;
+		font-size: 2vw;
+		margin-top: 5vw;
+	}
 	.line1 {
 		font-size: 6vw;
 	}
@@ -574,8 +664,185 @@
 		margin-left: 22vw;
 		margin-top: 30vw;
 	}
+	.explore-row {
+		width: 80%;
+	}
+	.explore-title {
+		font-size: 3vw;
+	}
+	.explore-desc {
+		font-size: 2vw;
+	}
+	.msg {
+		font-size: 3vw;
+	}
+	.videos {
+		height: 55vw;
+	}
+	.bg-video {
+		height: 100%;
+	}
+	.doctor {
+		padding: 2vw;
+		padding-bottom: 0;
+		align-items: center;
+	}
+	.doctor-name {
+		color: white;
+		font-size: 3vw;
+		font-family: regular;
+		margin-top: 0;
+	}
+	.doctor-desc {
+		color: white;
+		font-size: 2vw;
+		font-family: xlight;
+		line-height: 1.7em;
+		margin: 0;
+	}
+	.doctor-more {
+		color: #4c7c7c !important;
+		font-size: 3vw;
+		font-family: xlight;
+		text-decoration: underline;
+	}
+	.sean {
+		width: 35vw;
+		height: auto;
+	}
+	.carousel {
+		height: 35vw;
+	}
+	.carousel-name {
+		margin-top: 0;
+		margin-bottom: 1vw;
+		font-size: 3vw;
+	}
+	.carousel-item {
+		padding: 3vw;
+		height: 90%;
+	}
+	.carousel-img.pods,
+	.carousel-img {
+		margin: 0;
+		height: 25vw;
+		margin-left: 3vw;
+	}
+	.carousel-desc {
+		margin: 0;
+		font-size: 2vw;
+	}
+	.carousel-more {
+		font-size: 2vw;
+	}
+	.ADA h3,
+	.services h1,
+	.apts h1 {
+		margin-top: 2vw;
+		font-size: 3vw;
+		margin-bottom: 1vw;
+	}
+	.ADA p,
+	.apts p {
+		font-size: 2vw;
+		margin-bottom: 0;
+	}
+	.icon-ada {
+		height: 15vw;
+	}
+	.services .thing-they-do {
+		font-size: 2vw;
+	}
+	.services h2 {
+		font-size: 2vw;
+	}
+	.apts p {
+		width: 49%;
+	}
+	.apts button {
+		font-size: 2vw;
+		width: auto;
+		padding: 1vw 2vw;
+	}
+	.footer-columns {
+		width: 90%;
+	}
+	.column a {
+		font-size: 1.5vw;
+	}
+	.footer-bottom {
+		width: 85%;
+		margin-top: 2vw;
+	}
+	.footer-bottom p,
+	.footer-bottom a {
+		font-size: 2vw;
+	}
+	.mailing-list {
+		margin-bottom: 2vw;
+		padding: 1vw 2vw;
+	}
+	.mailing-list p,
+	.mailing-list button {
+		font-size: 2vw;
+	}
+	.mailing-list button {
+		padding: 1vw 2vw;
+		width: auto;
+	}
 }
 @media only screen and (max-width: 414px) {
+	.nav {
+		height: 13vw;
+	}
+	.small-nav {
+		display: flex !important;
+		flex-direction: row;
+		align-items: center;
+	}
+	.logo {
+		width: 30vw;
+		margin-right: 7vw;
+	}
+	.hamburger {
+		width: 5vw;
+		height: auto;
+	}
+	.hamburger-menu-bottom {
+		display: flex;
+		margin-left: 7vw;
+	}
+	.dropdown {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.dropdown-content-small {
+		margin-top: 9vw;
+		display: none;
+		position: absolute;
+		background-color: #4d7979;
+		opacity: 0.8;
+		z-index: 1;
+		letter-spacing: 1px;
+		font-family: regular;
+		font-size: 4vw;
+		margin-right: 50vw;
+		height: 335px;
+	}
+	.dropdown-content-small a {
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+	}
+	.small-nav {
+		display: block;
+	}
+	.big-nav {
+		display: none;
+	}
 	.girls {
 		transform: scale(1.1) translate(16vw);
 	}
