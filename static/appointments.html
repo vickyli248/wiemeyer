@@ -141,7 +141,50 @@
 		</div>
 		<div class="content">
 			<div class="side-navigation">
-				<ul></ul>
+				<a href="#">APPOINTMENTS</a>
+				<a href="#">FORMS</a>
+				<a href="#">FINANCIAL INFO</a>
+				<a href="#">SAVINGS</a>
+				<p>
+					“They have early and late appointments so you can work it around your
+					schedule, and the office is right off the highway so very convenient.
+					Highly recommend!”
+				</p>
+				<h6>- Cristin</h6>
+			</div>
+			<div class="content-body">
+				<h1>APPOINTMENTS</h1>
+				<p>
+					Making an appointment couldn’t be easier. Our friendly front desk team
+					is here to help find the earliest and most convenient time for you.
+				</p>
+				<div class="info-row">
+					<p class="addy">
+						Wiemeyer Dentistry <br />
+						104 Tremont Street
+						<br />Duxbury MA 02332
+					</p>
+					<p>
+						781 285 3513 <br />
+						<a href="mailto:office@wiemeyerdentistry.com"
+							>office@wiemeyerdentistry.com</a
+						>
+					</p>
+				</div>
+
+				<h1>HOURS</h1>
+				<p>
+					We’re open 5 days a week, and late on Tuesdays. For insurance,
+					financing or general questions call or email
+					<a href="mailto:office@wiemeyerdentistry.com"
+						>office@wiemeyerdentistry.com</a
+					>
+				</p>
+				<p>
+					Mon, Wed, Thu 7am – 5pm<br />
+					Tue 8am – 5pm<br />
+					Fri 7am – 1pm
+				</p>
 			</div>
 		</div>
 		<div class="footer">
@@ -209,5 +252,21 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			function clickFunc() {
+				const x = document.querySelector('.address');
+				const y = document.querySelector('.dropdown-content-small');
+				if (x.style.display === 'none' || x.style.display === '') {
+					x.style.display = 'block';
+				} else {
+					x.style.display = 'none';
+				}
+				if (y.style.display === 'none' || y.style.display === '') {
+					y.style.display = 'block';
+				} else {
+					y.style.display = 'none';
+				}
+			}
+		</script>
 	</body>
 </html>

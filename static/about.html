@@ -209,5 +209,21 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			function clickFunc() {
+				const x = document.querySelector('.address');
+				const y = document.querySelector('.dropdown-content-small');
+				if (x.style.display === 'none' || x.style.display === '') {
+					x.style.display = 'block';
+				} else {
+					x.style.display = 'none';
+				}
+				if (y.style.display === 'none' || y.style.display === '') {
+					y.style.display = 'block';
+				} else {
+					y.style.display = 'none';
+				}
+			}
+		</script>
 	</body>
 </html>

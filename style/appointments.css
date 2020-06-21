@@ -127,6 +127,78 @@
 	background: white;
 }
 
+.content {
+	display: flex;
+	width: 60vw;
+	min-height: 90vh;
+	margin: 2vw auto 0 auto;
+	justify-content: space-evenly;
+}
+.side-navigation {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+.side-navigation a {
+	background-color: #4d7979;
+	font-family: regular;
+	color: white;
+	font-size: 0.9vw;
+	padding: 8px;
+	margin: 0.2vw;
+}
+.side-navigation a:first-child {
+	margin-top: 1vw;
+}
+.side-navigation a:hover {
+	background-color: #4d7979;
+	font-family: regular;
+	color: white;
+	font-size: 0.9vw;
+	text-decoration: none;
+}
+.side-navigation p {
+	font-style: italic;
+	font-family: regular;
+	color: rgb(94, 94, 94);
+	margin-top: 1vw;
+	margin-bottom: 0;
+	font-size: 1vw;
+}
+.side-navigation h6 {
+	font-style: italic;
+	font-family: light;
+	color: rgb(94, 94, 94);
+	margin-top: 0.5vw;
+	font-size: 1vw;
+}
+
+.content-body {
+	margin-left: 3vw;
+}
+.content-body h1 {
+	color: #969062;
+	font-family: xlight;
+	font-size: 2.3vw;
+}
+.content-body p {
+	color: rgb(94, 94, 94);
+	font-family: xlight;
+	font-size: 1vw;
+}
+.content-body a {
+	color: #4d7979;
+}
+.info-row {
+	display: flex;
+}
+.info-row .addy {
+	margin-right: 10vw;
+}
+.info-row a {
+	color: #4d7979;
+}
+
 .footer {
 	background: #343434;
 	display: flex;
@@ -235,6 +307,20 @@
 		font-size: 2vw;
 		margin-top: 5vw;
 	}
+	.content {
+		width: 80vw;
+	}
+	.side-navigation a,
+	.side-navigation a:hover,
+	.side-navigation p,
+	.side-navigation h6,
+	.content-body p {
+		font-size: 1.5vw;
+	}
+	.content-body h1 {
+		font-size: 4vw;
+		margin-top: 1vw;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.small-nav {
@@ -257,17 +343,35 @@
 	.dropbtn {
 		font-size: 1.3vw;
 	}
-
 	.address {
 		margin-left: 0vw;
 		font-size: 2vw;
 		margin-top: 5vw;
 	}
+
+	.content {
+		width: 80vw;
+	}
+	.side-navigation a,
+	.side-navigation a:hover,
+	.side-navigation p,
+	.side-navigation h6,
+	.content-body p {
+		font-size: 2vw;
+	}
+	.content-body {
+		margin-left: 5vw;
+	}
+	.content-body h1 {
+		font-size: 4vw;
+		margin-top: 1vw;
+	}
+
 	.footer-columns {
 		width: 90%;
 	}
 	.column a {
-		font-size: 1.5vw;
+		font-size: 2vw;
 	}
 	.footer-bottom {
 		width: 85%;
@@ -342,6 +446,39 @@
 	.big-nav {
 		display: none;
 	}
+
+	.content {
+		flex-direction: column;
+		width: 75vw;
+		align-items: flex-start;
+		justify-content: start;
+		margin-bottom: 10vw;
+	}
+	.side-navigation a {
+		font-size: 3vw;
+		margin-top: 1vw;
+	}
+	.side-navigation a:first-child {
+		margin-top: 5vw;
+	}
+	.side-navigation p,
+	.side-navigation h6 {
+		margin-top: 2vw;
+		font-size: 3vw;
+	}
+	.content-body {
+		margin-left: 0;
+	}
+	.content-body h1 {
+		font-size: 7vw;
+	}
+	.content-body p {
+		font-size: 3vw;
+	}
+	.side-navigation {
+		width: 50%;
+	}
+
 	.footer {
 		padding: 5vw;
 	}
