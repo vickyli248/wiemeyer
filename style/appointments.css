@@ -57,6 +57,7 @@
 	font-family: regular;
 	font-size: 16px;
 	padding: 0;
+	outline: none;
 }
 .dropdown {
 	position: relative;

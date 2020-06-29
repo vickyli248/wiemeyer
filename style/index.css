@@ -57,6 +57,7 @@
 	font-family: regular;
 	font-size: 16px;
 	padding: 0;
+	outline: none;
 }
 .dropdown {
 	position: relative;
@@ -183,8 +184,8 @@
 .eq {
 	margin-right: 10px;
 	margin-left: 10px;
-	width: 220px;
-	height: auto;
+	width: auto;
+	height: 220px;
 }
 
 .explore {
@@ -602,187 +603,7 @@
 		width: auto;
 	}
 }
-/*
-@media only screen and (max-width: 768px) {
-	.small-nav {
-		display: none;
-	}
-	.nav {
-		min-height: 7vw;
-	}
-	.big-nav {
-		width: 80vw;
-	}
-	.nav-elements {
-		width: 70vw;
-	}
-	.logo {
-		width: 15vw;
-		height: auto;
-		margin-right: 25px;
-	}
-	.dropbtn {
-		font-size: 1.3vw;
-	}
 
-	.address {
-		margin-left: 0vw;
-		font-size: 2vw;
-		margin-top: 5vw;
-	}
-	.line1 {
-		font-size: 6vw;
-	}
-	.line2 {
-		font-size: 9vw;
-	}
-	.blurb {
-		font-size: 2.5vw;
-		width: 90%;
-	}
-	.eq-row {
-		display: flex;
-		flex-direction: row;
-	}
-	.eq {
-		width: 22vw;
-		height: auto;
-	}
-	.girls {
-		transform: scale(1.4) translateY(-12vh) translateX(-7vw);
-	}
-	.headliner {
-		margin-left: 22vw;
-		margin-top: 30vw;
-	}
-	.explore-row {
-		width: 80%;
-	}
-	.explore-title {
-		font-size: 3vw;
-	}
-	.explore-desc {
-		font-size: 2vw;
-	}
-	.msg {
-		font-size: 3vw;
-	}
-	.videos {
-		height: 55vw;
-	}
-	.bg-video {
-		height: 100%;
-	}
-	.doctor {
-		padding: 2vw;
-		padding-bottom: 0;
-		align-items: center;
-	}
-	.doctor-name {
-		color: white;
-		font-size: 3vw;
-		font-family: regular;
-		margin-top: 0;
-	}
-	.doctor-desc {
-		color: white;
-		font-size: 2vw;
-		font-family: xlight;
-		line-height: 1.7em;
-		margin: 0;
-	}
-	.doctor-more {
-		color: #4c7c7c !important;
-		font-size: 3vw;
-		font-family: xlight;
-		text-decoration: underline;
-	}
-	.sean {
-		width: 35vw;
-		height: auto;
-	}
-	.carousel {
-		height: 35vw;
-	}
-	.carousel-name {
-		margin-top: 0;
-		margin-bottom: 1vw;
-		font-size: 3vw;
-	}
-	.carousel-item {
-		padding: 3vw;
-		height: 90%;
-	}
-	.carousel-img.pods,
-	.carousel-img {
-		margin: 0;
-		height: 25vw;
-		margin-left: 3vw;
-	}
-	.carousel-desc {
-		margin: 0;
-		font-size: 2vw;
-	}
-	.carousel-more {
-		font-size: 2vw;
-	}
-	.ADA h3,
-	.services h1,
-	.apts h1 {
-		margin-top: 2vw;
-		font-size: 3vw;
-		margin-bottom: 1vw;
-	}
-	.ADA p,
-	.apts p {
-		font-size: 2vw;
-		margin-bottom: 0;
-	}
-	.icon-ada {
-		height: 15vw;
-	}
-	.services .thing-they-do {
-		font-size: 2vw;
-	}
-	.services h2 {
-		font-size: 2vw;
-	}
-	.apts p {
-		width: 49%;
-	}
-	.apts button {
-		font-size: 2vw;
-		width: auto;
-		padding: 1vw 2vw;
-	}
-	.footer-columns {
-		width: 90%;
-	}
-	.column a {
-		font-size: 1.5vw;
-	}
-	.footer-bottom {
-		width: 85%;
-		margin-top: 2vw;
-	}
-	.footer-bottom p,
-	.footer-bottom a {
-		font-size: 2vw;
-	}
-	.mailing-list {
-		margin-bottom: 2vw;
-		padding: 1vw 2vw;
-	}
-	.mailing-list p,
-	.mailing-list button {
-		font-size: 2vw;
-	}
-	.mailing-list button {
-		padding: 1vw 2vw;
-		width: auto;
-	}
-}
-*/
 @media only screen and (max-width: 768px) {
 	html,
 	body {
