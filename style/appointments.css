@@ -107,7 +107,7 @@
 }
 .address {
 	padding: 1vw;
-	margin-top: 3.5vw;
+	margin-top: 50px;
 	margin-left: 5vw;
 	display: none;
 	position: absolute;
@@ -201,6 +201,12 @@
 }
 .info-row a {
 	color: #4d7979;
+}
+.info-row a:hover {
+	color: #4d7979;
+	text-decoration: none;
+	border-bottom: solid 1px;
+	padding-bottom: 1px;
 }
 
 .footer {
@@ -484,25 +490,24 @@
 		overflow-x: hidden;
 	}
 	.nav {
-		height: 80px;
+		height: 100px;
 	}
 	.small-nav {
 		display: flex !important;
 		flex-direction: row;
 		align-items: center;
-		height: 200px;
 	}
 	.logo {
-		width: 150px;
-		margin-right: 7vw;
+		width: auto;
+		margin-right: 40px;
 	}
 	.hamburger {
-		width: 25px;
+		width: 35px;
 		height: auto;
 	}
 	.hamburger-menu-bottom {
 		display: flex;
-		margin-left: 25%;
+		margin-left: 35%;
 	}
 	.dropdown {
 		display: flex;
@@ -510,7 +515,8 @@
 		align-items: flex-end;
 	}
 	.dropdown-content-small {
-		margin-top: 45px;
+		margin-top: 65px;
+		margin-right: 100vw;
 		display: none;
 		position: absolute;
 		background-color: #4d7979;
@@ -518,9 +524,9 @@
 		z-index: 1;
 		letter-spacing: 1px;
 		font-family: regular;
-		font-size: 20px;
-		height: 400px;
-		width: 200px;
+		font-size: 22px;
+		height: 420px;
+		width: 59vw;
 	}
 	.dropdown-content-small a {
 		color: white;
@@ -535,178 +541,7 @@
 	.big-nav {
 		display: none;
 	}
-	.girls {
-		transform: scale(1.1) translate(16vw);
-	}
-	.eq-row {
-		display: none;
-	}
-	.line1 {
-		font-size: 40px;
-		margin-bottom: 5px;
-	}
-	.line2 {
-		font-size: 60px;
-		margin-bottom: 5px;
-	}
-	.blurb {
-		font-size: 20px;
-		width: 100%;
-	}
-	.headliner {
-		margin: 20vw auto 0 auto;
-	}
-	.explore-row {
-		flex-direction: column;
-		justify-content: center;
-		width: 100%;
-	}
-	.explore-photo {
-		width: 70%;
-	}
-	.explore-title {
-		font-size: 25px;
-	}
-	.explore-desc {
-		font-size: 20px;
-	}
-	.explore {
-		padding: 7vw;
-	}
-	.largeplayer {
-		display: none;
-	}
-	.msg {
-		display: none;
-	}
-	.smallplayer {
-		display: flex;
-	}
-	.videos {
-		display: flex;
-		align-items: center;
-		overflow: hidden;
-		justify-content: center;
-		padding: 15px;
-	}
-	.top {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-	}
-	.sean {
-		width: 200px;
-		height: auto;
-	}
-	.doctor {
-		padding: 2vw;
-		padding-bottom: 0;
-		flex-direction: column;
-		align-items: center;
-	}
-	.doctor-name {
-		color: white;
-		font-size: 18px;
-		font-family: regular;
-	}
-	.doctor-desc {
-		color: white;
-		font-size: 16px;
-		font-family: xlight;
-		line-height: 1.7em;
-		margin: 0;
-	}
-	.doctor-more {
-		color: #4c7c7c !important;
-		font-size: 16px;
-		font-family: xlight;
-		text-decoration: underline;
-	}
-	.carousel {
-		height: 400px;
-	}
-	.carousel-inner {
-		display: flex !important;
-		justify-content: center !important;
-		align-items: center !important;
-	}
-	.carousel-name {
-		margin-top: 0;
-		margin-bottom: 1vw;
-		font-size: 18px;
-	}
-	.carousel-item {
-		flex-direction: column;
-		align-items: center !important;
-		padding: 3vw;
-		height: 90%;
-	}
-	.carousel-img {
-		margin: 0;
-		height: 140px;
-		margin-top: 5vw;
-	}
-	.carousel-img.pods {
-		margin: 0;
-		margin-top: 25px;
-		height: 160px;
-	}
-	.carousel-desc {
-		margin: 0;
-		font-size: 16px;
-	}
-	.carousel-more {
-		font-size: 16px;
-	}
-	.ADA {
-		flex-direction: column;
-		padding: 8vw;
-	}
-	.ada-blurb {
-		margin-left: 0;
-	}
-	.ADA h3,
-	.services h1,
-	.apts h1 {
-		margin-top: 30px;
-		font-size: 18px;
-		margin-bottom: 1vw;
-	}
-	.ADA p,
-	.apts p {
-		font-size: 16px;
-		margin-bottom: 0;
-	}
-	.icon-ada {
-		height: 100px;
-	}
-	.services,
-	.apts {
-		padding: 3vw;
-	}
-	.services .thing-they-do {
-		font-size: 16px;
-	}
-	.service-row {
-		flex-direction: column;
-	}
-	.c2 {
-		margin: 0;
-	}
-	.services h2 {
-		font-size: 16px;
-	}
-	.apts p {
-		width: 70%;
-	}
-	.apts button {
-		font-size: 16px;
-		width: auto;
-		padding: 7px 15px;
-		margin-bottom: 20px;
-	}
+
 	.footer {
 		padding: 5vw;
 	}
@@ -719,7 +554,7 @@
 		margin: 1vw;
 	}
 	.column a {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.footer-bottom {
 		flex-direction: column-reverse;

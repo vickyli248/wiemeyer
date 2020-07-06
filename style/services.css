@@ -106,7 +106,7 @@
 }
 .address {
 	padding: 1vw;
-	margin-top: 3.5vw;
+	margin-top: 50px;
 	margin-left: 5vw;
 	display: none;
 	position: absolute;
@@ -498,25 +498,24 @@
 		overflow-x: hidden;
 	}
 	.nav {
-		height: 80px;
+		height: 100px;
 	}
 	.small-nav {
 		display: flex !important;
 		flex-direction: row;
 		align-items: center;
-		height: 200px;
 	}
 	.logo {
-		width: 150px;
-		margin-right: 7vw;
+		width: auto;
+		margin-right: 40px;
 	}
 	.hamburger {
-		width: 25px;
+		width: 35px;
 		height: auto;
 	}
 	.hamburger-menu-bottom {
 		display: flex;
-		margin-left: 25%;
+		margin-left: 35%;
 	}
 	.dropdown {
 		display: flex;
@@ -524,7 +523,8 @@
 		align-items: flex-end;
 	}
 	.dropdown-content-small {
-		margin-top: 45px;
+		margin-top: 65px;
+		margin-right: 100vw;
 		display: none;
 		position: absolute;
 		background-color: #4d7979;
@@ -532,9 +532,9 @@
 		z-index: 1;
 		letter-spacing: 1px;
 		font-family: regular;
-		font-size: 20px;
-		height: 400px;
-		width: 200px;
+		font-size: 22px;
+		height: 420px;
+		width: 59vw;
 	}
 	.dropdown-content-small a {
 		color: white;
@@ -566,7 +566,7 @@
 		margin: 1vw;
 	}
 	.column a {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.footer-bottom {
 		flex-direction: column-reverse;

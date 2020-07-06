@@ -21,8 +21,13 @@
 		/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link
+			href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
+		<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 		<div class="nav">
 			<div class="big-nav">
 				<div class="nav-elements">
@@ -152,12 +157,12 @@
 						<img src="img/hamburger.png" class="hamburger" />
 					</button>
 					<div class="dropdown-content-small">
-						<a href="/static/appointments.html">APPOINTMENTS</a>
-						<a href="#">ABOUT</a>
-						<a href="#">DOCTORS</a>
-						<a href="#">SERVICES</a>
-						<a href="#">FOR PATIENTS</a>
-						<a href="#">CONTACT</a>
+						<a href="static/appointments.html">APPOINTMENTS</a>
+						<a href="static/about.html">ABOUT</a>
+						<a href="static/doctors.html">DOCTORS</a>
+						<a href="static/services.html">SERVICES</a>
+						<a href="static/for-patients.html">FOR PATIENTS</a>
+						<a href="static/contact.html">CONTACT</a>
 						<div class="hamburger-menu-bottom">
 							<a
 								href="https://www.google.com/maps?ll=42.014981,-70.718952&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=104+Tremont+St+Duxbury,+MA+02332"
@@ -180,7 +185,7 @@
 		<div class="content">
 			<div class="header">
 				<img src="img/scaler.jpg" class="girls" />
-				<div class="headliner">
+				<div class="headliner show-on-scroll">
 					<div class="line1">YOU ARE</div>
 					<div class="line2">SAFE HERE</div>
 					<div class="blurb">
@@ -207,7 +212,7 @@
 				</div>
 			</div>
 			<div class="explore">
-				<div class="explore-row">
+				<div class="explore-row show-on-scroll">
 					<div class="explore-item">
 						<a href="#" class="forms"
 							><img src="img/icon-forms.png" class="explore-photo"
@@ -246,7 +251,7 @@
 				</div>
 			</div>
 			<div class="videos">
-				<div class="top">
+				<div class="top show-on-scroll">
 					<h2 class="msg">
 						An Important Message from Dr. Wiemeyer about COVID-19
 					</h2>
@@ -275,20 +280,19 @@
 				</video>
 			</div>
 			<div class="doctor">
-				<div class="doctor-text">
+				<div class="doctor-text show-on-scroll">
 					<h3 class="doctor-name">Dr. Sean O'Brien</h3>
-					<p class="doctor-desc">
-						Dr. O'Brien earned his B.S. degree in biological <br />chemistry
-						from Bates College in 2011, and <br />completed his D.M.D at the
-						University of<br />
+					<p class="doctor-desc" style="width: 350px;">
+						Dr. O'Brien earned his B.S. degree in biological chemistry from
+						Bates College in 2011, and completed his D.M.D at the University of
 						Connecticut School of Dental Medicine in 2015.
 					</p>
 					<a href="#" class="doctor-more">More...</a>
 				</div>
-				<img src="img/dr-sean.png" class="sean" />
+				<img src="img/dr-sean.png" id="sean show-on-scroll" />
 			</div>
 			<div class="carousel">
-				<div class="container">
+				<div class="container show-on-scroll">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox" style="width: 100%;">
@@ -354,8 +358,8 @@
 				</div>
 			</div>
 			<div class="ADA">
-				<img src="img/icon-ada.png" class="icon-ada" />
-				<div class="ada-blurb">
+				<img src="img/icon-ada.png" class="icon-ada show-on-scroll" />
+				<div class="ada-blurb show-on-scroll">
 					<h3>About ADA Compliance</h3>
 					<p>
 						The Americans with Disabilities Act Standards for <br />Accessible
@@ -370,7 +374,7 @@
 				</div>
 			</div>
 			<div class="services">
-				<div class="service-chunk">
+				<div class="service-chunk show-on-scroll">
 					<h1>What We Do</h1>
 					<div class="service-row">
 						<div class="c1">
@@ -406,7 +410,7 @@
 					</h2>
 				</div>
 			</div>
-			<div class="apts">
+			<div class="apts show-on-scroll">
 				<h1>Appointments</h1>
 				<p>
 					“I am phobic when it comes to dentists. Dr. Andy and all who work with
@@ -480,15 +484,47 @@
 						<a href="http://gjnelson.com" target="_blank"> gjnelson.com</a>
 					</p>
 				</div>
-
-				<div class="mailing-list">
-					<p>Join Our Mailing List</p>
-					<button>Join</button>
-				</div>
 			</div>
 		</div>
 	</body>
 	<script>
+		// ===== Scroll to Top ====
+		$(window).scroll(function () {
+			if ($(this).scrollTop() >= 50) {
+				// If page is scrolled more than 50px
+				$('#return-to-top').fadeIn(200); // Fade in the arrow
+			} else {
+				$('#return-to-top').fadeOut(200); // Else fade out the arrow
+			}
+		});
+		$('#return-to-top').click(function () {
+			// When arrow is clicked
+			$('body,html').animate(
+				{
+					scrollTop: 0, // Scroll to top of body
+				},
+				500
+			);
+		});
+		function randomDoctor() {
+			var randomNum = Math.floor(Math.random() * 3);
+			var docName = document.querySelector('.doctor-name');
+			var docDesc = document.querySelector('.doctor-desc');
+			var docPic = document.getElementById('sean show-on-scroll');
+			if (randomNum === 0) {
+				docName.innerHTML = 'Dr. Amy Asbedian';
+				docDesc.innerHTML =
+					'Dr. Asbedian received her degree in dentistry from the University of Connecticut School of Dental Medicine in 2001. She joined WiemeyerDentistry in 2010 as a general dentist and has been providing excellent care ever since.';
+				docPic.src = 'img/dr-amy.png';
+			}
+			if (randomNum === 1) {
+				docName.innerHTML = 'Dr. Andrew Wiemeyer';
+				docDesc.innerHTML =
+					'Dr. Andrew S. Wiemeyer is an esteemed prosthodontist who graduated from the University of Connecticut School of Dental Medicine in 1998. Upon  graduating, he completed a three-yearresidency where he earned a certificate of specialty in prosthodontics.';
+				docPic.src = '/img/dr-andy.png';
+			}
+		}
+		randomDoctor();
 		function clickFunc() {
 			const x = document.querySelector('.address');
 			const y = document.querySelector('.dropdown-content-small');
@@ -503,5 +539,38 @@
 				y.style.display = 'none';
 			}
 		}
+		var scroll =
+			window.requestAnimationFrame ||
+			function (callback) {
+				window.setTimeout(callback, 1000 / 60);
+			};
+
+		var elementsToShow = document.querySelectorAll('.show-on-scroll');
+		function loop() {
+			elementsToShow.forEach(function (element) {
+				if (isElementInViewport(element)) {
+					element.classList.add('is-visible');
+				}
+			});
+			scroll(loop);
+		}
+		function isElementInViewport(el) {
+			// special bonus for those using jQuery
+			if (typeof jQuery === 'function' && el instanceof jQuery) {
+				el = el[0];
+			}
+			var rect = el.getBoundingClientRect();
+			return (
+				(rect.top <= 0 && rect.bottom >= 0) ||
+				(rect.bottom >=
+					(window.innerHeight || document.documentElement.clientHeight) &&
+					rect.top <=
+						(window.innerHeight || document.documentElement.clientHeight)) ||
+				(rect.top >= 0 &&
+					rect.bottom <=
+						(window.innerHeight || document.documentElement.clientHeight))
+			);
+		}
+		loop();
 	</script>
 </html>
