@@ -287,7 +287,11 @@
 						Bates College in 2011, and completed his D.M.D at the University of
 						Connecticut School of Dental Medicine in 2015.
 					</p>
-					<a href="#" class="doctor-more">More...</a>
+					<a
+						href="https://wiemeyerdentistry.com/develop/doctors/obrien.php"
+						id="doctor-more"
+						>More...</a
+					>
 				</div>
 				<img src="img/dr-sean.png" id="sean show-on-scroll" />
 			</div>
@@ -511,17 +515,23 @@
 			var docName = document.querySelector('.doctor-name');
 			var docDesc = document.querySelector('.doctor-desc');
 			var docPic = document.getElementById('sean show-on-scroll');
+			var docLink = document.getElementById('doctor-more');
+			console.log(docLink);
 			if (randomNum === 0) {
 				docName.innerHTML = 'Dr. Amy Asbedian';
 				docDesc.innerHTML =
 					'Dr. Asbedian received her degree in dentistry from the University of Connecticut School of Dental Medicine in 2001. She joined WiemeyerDentistry in 2010 as a general dentist and has been providing excellent care ever since.';
 				docPic.src = 'img/dr-amy.png';
+				docLink.href =
+					'https://wiemeyerdentistry.com/develop/doctors/asbedian.php';
 			}
 			if (randomNum === 1) {
 				docName.innerHTML = 'Dr. Andrew Wiemeyer';
 				docDesc.innerHTML =
 					'Dr. Andrew S. Wiemeyer is an esteemed prosthodontist who graduated from the University of Connecticut School of Dental Medicine in 1998. Upon  graduating, he completed a three-yearresidency where he earned a certificate of specialty in prosthodontics.';
 				docPic.src = 'img/dr-andy.png';
+				docLink.href =
+					'https://wiemeyerdentistry.com/develop/doctors/wiemeyer.php';
 			}
 		}
 		randomDoctor();

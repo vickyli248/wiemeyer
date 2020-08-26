@@ -312,7 +312,7 @@
 	font-family: xlight;
 	line-height: 1.7em;
 }
-.doctor-more {
+#doctor-more {
 	color: #4c7c7c !important;
 	font-size: 20px;
 	font-family: xlight;
@@ -330,7 +330,7 @@
 	transform: translateY(0);
 	opacity: 1;
 }
-.doctor-more:hover {
+#doctor-more:hover {
 	color: #4c7c7c;
 	font-family: xlight;
 	text-decoration: none !important;
@@ -760,7 +760,7 @@ h3 i {
 		align-items: center;
 	}
 	.logo {
-		width: 250px;
+		width: 150px;
 		margin-right: 60px;
 	}
 	.hamburger {
@@ -770,11 +770,6 @@ h3 i {
 	.hamburger-menu-bottom {
 		display: flex;
 		margin-left: 35%;
-	}
-	.dropdown {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
 	}
 	.dropdown-content-small {
 		margin-top: 70px;
@@ -791,6 +786,12 @@ h3 i {
 		width: 350px;
 		padding-top: 20px;
 	}
+	.dropdown {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
 	.dropdown-content-small a {
 		color: white;
 		padding: 12px 16px;
@@ -881,7 +882,7 @@ h3 i {
 		line-height: 1.7em;
 		margin: 0;
 	}
-	.doctor-more {
+	#doctor-more {
 		color: #4c7c7c !important;
 		font-size: 3vw;
 		font-family: xlight;
@@ -1147,7 +1148,7 @@ h3 i {
 		line-height: 1.7em;
 		margin: 0;
 	}
-	.doctor-more {
+	#doctor-more {
 		color: #4c7c7c !important;
 		font-size: 20px;
 		font-family: xlight;
@@ -1426,7 +1427,7 @@ h3 i {
 		line-height: 1.7em;
 		margin: 0;
 	}
-	.doctor-more {
+	#doctor-more {
 		color: #4c7c7c !important;
 		font-size: 16px;
 		font-family: xlight;
